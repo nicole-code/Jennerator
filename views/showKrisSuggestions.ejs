@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>The Jennerator Suggests</title>
+</head>
+<body>
+    <% if (user) { %>
+        <a href="/logout"><i class="material-icons left"></i>Log Out</a>
+      <% } else { %>
+        <a href="/auth/google"><i class="material-icons left"></i>Log In</a>
+      <% } %>
+    <h1>Based on your interest in <%=interests%>,</h1>
+    <h1>The Jennerator Suggests: <%=suggestion%></h1>
+
+    <form action="/interests/savedSuggestions" method="POST">
+       <input id="hide-suggestion" name = "suggestion" type="text" value="<%=suggestion%>"></input>
+        <button type="submit">Save Kris' Suggestion</button>
+    </form>
+
+    <form action="/interests/new" method="GET">
+        <button type="submit">I won't give you 10% for this - Choose Another Interest</button>
+    </form>
+
+
+</body>
+</html>

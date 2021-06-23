@@ -1,0 +1,14 @@
+body {
+  background-color: gray;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: whitesmoke;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#hide-suggestion {
+  display: none
+}

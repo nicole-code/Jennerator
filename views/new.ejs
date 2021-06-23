@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Kris Your Interests</title>
+</head>
+<body>
+    <% if (user) { %>
+        <a href="/logout"><i class="material-icons left"></i>Log Out</a>
+      <% } else { %>
+        <a href="/auth/google"><i class="material-icons left"></i>Log In</a>
+      <% } %>
+   
+    <h1>You're doing amazing, sweetie!</h1>
+    <h2>...or are you?</h2>
+    <h3>Tell Momager Kris Jenner what you're interested in and she will help you choose a new career path</h3>
+
+
+    <form action= "/interests/showmekrissuggestion" method="POST">
+        <label for="interests">Choose your interest</label>
+        <select id="intersts" name="interests">
+            <option value="Visual Arts">Visual Arts</option>
+            <option value="Performing Arts">Performing Arts</option>
+            <option value="Communication and Media">Communication and Media</option>
+            <option value="Education">Education</option>
+            <option value="Government">Government</option>
+            <option value="Law">Law</option>
+            <option value="Retail">Retail</option>
+            <option value="Technology">Technology</option>
+            <option value="Event Planning">Event Planning</option>
+            <option value="Insurance">Insurance</option>
+            <option value="Business and Marketing">Business and Marketing</option>      
+        </select>
+        <button type="submit">Help me, Kris!</button>
+    </form>
+
+</body>
+</html>

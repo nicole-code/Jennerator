@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Jennerator Suggestions</title>
+</head>
+<body>
+  <% if (user) { %>
+    <a href="/logout"><i class="material-icons left"></i>Log Out</a>
+  <% } else { %>
+    <a href="/auth/google"><i class="material-icons left"></i>Log In</a>
+  <% } %>
+    <h1>Your Saved Suggestions</h1>
+    
+    <% for (let s of user.suggestions) { %>
+    <li><%= s.suggestion%></li>
+    <button>No thank you, Kris.</button>
+    <% } %>
+  
+   
+</body>
+</html>
+
+
+  
+             
+              
+      
+
+
+  </body>
+</html>
