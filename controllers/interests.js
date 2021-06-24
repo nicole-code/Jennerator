@@ -47,7 +47,8 @@ function saveSuggestion(req,res,next) {
     if (req.user) {
         req.user.suggestions.push(req.body);
         req.user.save(function(err) {  
-        res.render('savedSuggestions.ejs', {user: req.user});
+            res.redirect('/interests/savedSuggestions')
+        // res.render('savedSuggestions.ejs', {user: req.user});
         }) 
     } 
     else {res.redirect('new')}   
@@ -70,9 +71,13 @@ function deleteSuggestion (req,res) {
     };
     req.user.suggestions.splice(correctIndex, 1);
     req.user.save();
-    res.render('savedSuggestions.ejs', {user: req.user});
-    res.redirect('interests/savedSuggestions');
+    // res.render('savedSuggestions.ejs', {user: req.user});
+    res.redirect('/interests/savedSuggestions');
 
+};
+
+function displaySuggestion (req,res) {
+    res.render('savedSuggestions.ejs', {user: req.user});
 };
 
 module.exports = {
@@ -81,7 +86,8 @@ module.exports = {
     showSuggestion: showSuggestion,
     saveSuggestion: saveSuggestion,
     scrapSuggestion: scrapSuggestion,
-    deleteSuggestion: deleteSuggestion
+    deleteSuggestion: deleteSuggestion,
+    displaySuggestion: displaySuggestion
 }
 
 
