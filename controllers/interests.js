@@ -58,22 +58,34 @@ function scrapSuggestion (req,res) {
 };
 
 function deleteSuggestion (req,res) {
-    // console.log(req.user) k why this get me undefined?
-    console.log(req.user.suggestions)
-    // const userSuggestion = req.user.suggestions.id(_id)
+    console.log("in delete suggest function",req.user) 
+    // console.log(req.user.suggestions)
+    // console.log("this is req param id",req.params.id)
+    // const userSuggestion = req.user.suggestions[0];
     // console.log("this is the users suggestion", userSuggestion)
-    res.redirect('/savedSuggestions', {user: req.user})
+    //idx is where it is in suggestions array
+    // const idx = req.user.suggestions.findIndex(suggestion => suggestion._id === req.params.id);
+    let idx = 0;
+    let correctIndex;
+    for (let suggestion of req.user.suggestions) {
+        // console.log(suggestion._id)
+        if (suggestion._id == req.params.id) {
+            // console.log("correct id found", idx)
+            correctIndex = idx;
+        }
+        idx++
+    };
+    
+    console.log("this is the correct index", correctIndex)
+    console.log("this is before splice", req.user.suggestions[0])
+    req.user.suggestions.splice(correctIndex, 1);
+    console.log("this is after the splice", req.user.suggestions[0])
+    req.user.save();
+
+    res.render('savedSuggestions.ejs', {user: req.user});
+
+
 };
-
-
-// function delFact(req, res, next) {
-//     Student.findOne({'facts._id': req.params.id}, function(err, student) {
-//       student.facts.id(req.params.id).remove();
-//       student.save(function(err) {
-//         res.redirect('/students');
-//       });
-//     });
-//   }
 
 module.exports = {
     newInterest: newInterest,

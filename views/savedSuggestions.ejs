@@ -20,7 +20,7 @@
     <% for (let s of user.suggestions) { %>
     <%= s.suggestion%>
 
-    <form action="savedSuggestions/<%=s.id%>?_method=DELETE"
+    <form action="/interests/savedSuggestions?_method=DELETE"
       class="delete-form" method="POST">
       <button>No thank you, Kris.</button>
     </form>
