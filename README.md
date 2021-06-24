@@ -12,7 +12,14 @@
 <li>Node JS</li>
 <li>Express JS</li>
 <li>Mongoose</li>
-<li>Mongo DB</li>
-<li>Mongo DB Atlas</li>
+<li>MongoDB</li>
+<li>MongoDB Atlas</li>
 <li>Heroku</li>
 </ul>
+
+<ul><strong>Next Steps:</strong>
+<br>
+<li>Implement Kayne.rest API for insights from Yeez that no one asked for</li>
+<li>Allow users to be able to share Jennerator suggestions across social media platforms</li>
+<li>Store multiple suggestions in the database to eliminate the need for hard-coded suggestions</li>
+<ul>
