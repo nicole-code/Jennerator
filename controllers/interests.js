@@ -58,11 +58,22 @@ function scrapSuggestion (req,res) {
 };
 
 function deleteSuggestion (req,res) {
-
+    // console.log(req.user) k why this get me undefined?
+    console.log(req.user.suggestions)
     // const userSuggestion = req.user.suggestions.id(_id)
     // console.log("this is the users suggestion", userSuggestion)
-    // res.redirect('/savedSuggestions', {user: req.user})
+    res.redirect('/savedSuggestions', {user: req.user})
 };
+
+
+// function delFact(req, res, next) {
+//     Student.findOne({'facts._id': req.params.id}, function(err, student) {
+//       student.facts.id(req.params.id).remove();
+//       student.save(function(err) {
+//         res.redirect('/students');
+//       });
+//     });
+//   }
 
 module.exports = {
     newInterest: newInterest,

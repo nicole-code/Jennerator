@@ -48,3 +48,11 @@ button {
 #new-form {
   font-size: 30px;
 }
+
+.index-body {
+  background-image: url("/images/indexpage.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
