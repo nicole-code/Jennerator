@@ -59,19 +59,22 @@ function scrapSuggestion (req,res) {
 };
 
 function deleteSuggestion (req,res) {
-    let idx = 0;
-    let correctIndex;
+    let idx = 0; //goes through ALL suggestions
+    let correctIndex = 0;
     for (let suggestion of req.user.suggestions) {
-
+            //if the id of the suggestion OBJECT in the suggestions 
+            //array matches the one that was clicked on to be deleted, then grab INDEX of 
+            //the object called correct index
         if (suggestion._id == req.params.id) {
             
             correctIndex = idx;
+            //this is ONLY the idx that matches this condition
         }
         idx++
+        //if we dont incrememnt it will not pass through every single object
     };
-    req.user.suggestions.splice(correctIndex, 1);
-    req.user.save();
-    // res.render('savedSuggestions.ejs', {user: req.user});
+    req.user.suggestions.splice(correctIndex, 1); //taking the correct index and delete ONLY that ONE suggestion
+    req.user.save(); //then we save changes to the database
     res.redirect('/interests/savedSuggestions');
 
 };

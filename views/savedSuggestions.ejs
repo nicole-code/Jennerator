@@ -15,14 +15,19 @@
   <% } else { %>
     <a href="/auth/google"><i class="material-icons left"></i>Log In</a>
   <% } %>
+    <a href="/interests/new">New Suggestion</a>
+
     <h1>Your Saved Suggestions</h1>
     
     <% for (let s of user.suggestions) { %>
+      <br>
     <%= s.suggestion%>
-
+      <br>
     <form action="/interests/savedSuggestions?_method=DELETE"
       class="delete-form" method="POST">
+      <br>
       <button>No thank you, Kris.</button>
+      <br>
     </form>
     <% } %>
   

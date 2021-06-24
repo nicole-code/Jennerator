@@ -15,13 +15,14 @@
       <% } else { %>
         <a href="/auth/google"><i class="material-icons left"></i>Log In</a>
       <% } %>
+      <a href="/interests/savedSuggestions">My Saved Suggestions</a>
    
     <h1 class="bigger">You're doing amazing, sweetie!</h1>
     <h2>...or are you?</h2>
     <h3 class ="big">Tell Momager Kris Jenner what you're interested in and she will help you choose a new career path</h3>
     
     <form id =new-from action= "/interests/showmekrissuggestion" method="POST">
-        <label for="interests">Choose your interest</label>
+        <label class="big" for="interests">Choose your interest</label>
         <br>
         <br>
         <select id="intersts" name="interests">
