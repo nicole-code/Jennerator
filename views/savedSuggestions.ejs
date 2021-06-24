@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@800&family=Padauk&display=swap" rel="stylesheet"> 
     <title>Saved Jennerator Suggestions</title>
 </head>
 <body>
@@ -15,8 +18,12 @@
     <h1>Your Saved Suggestions</h1>
     
     <% for (let s of user.suggestions) { %>
-    <li><%= s.suggestion%></li>
-    <button>No thank you, Kris.</button>
+    <%= s.suggestion%>
+
+    <form action="savedSuggestions/<%=s.id%>?_method=DELETE"
+      class="delete-form" method="POST">
+      <button>No thank you, Kris.</button>
+    </form>
     <% } %>
   
    

@@ -7,6 +7,6 @@ router.get('/', interestsCtrl.index)
 router.post('/showmekrissuggestion', interestsCtrl.showSuggestion)
 router.post('/savedSuggestions', interestsCtrl.saveSuggestion)
 router.post('/showmekrissuggestion', interestsCtrl.scrapSuggestion)
-router.delete('/savedSuggestions', interestsCtrl.deleteSuggestion)
+// router.delete('/savedSuggestions/:id', interestsCtrl.deleteSuggestion)
 
 module.exports = router;
