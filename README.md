@@ -5,6 +5,8 @@
 <br>
 <p>You can either save Momager™️ Kris Jenner's suggestion to your account or feel free to scrap it. But before you scrap it, ask yourself - who has more money, me or Momager™️ Kris Jenner?</p>
 <br>
+<a href="https://career-jennerator.herokuapp.com/">Click here to check out the Career Jennerator</a>
+<br>
 <ul><strong>Technologies used:</strong>
 <br>
 <li>HTML</li>
