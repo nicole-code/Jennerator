@@ -7,11 +7,15 @@
 <br>
 <a href="https://career-jennerator.herokuapp.com/">Click here to check out the Career Jennerator</a>
 <br>
-<h1><ul><strong>Technologies used:</strong></h1>
+<a href="https://trello.com/b/DiE1cRQD/project-2-crud-application-career-jennerator">View The Career Jennerator Trello Board Here</a>
+<b>
+<a href="https://lucid.app/lucidchart/a7cd76a3-9b71-4f03-a680-3b66177d7840/edit?page=0_0#">View The Career Jennerator ERD Here</a>
+<br>
+<ul><h1>Technologies used:</h1>
 <br>
 <li>HTML</li>
 <li>CSS</li>
-<li>JavaScript<li>
+<li>JavaScript</li>
 <li>Node JS</li>
 <li>Express JS</li>
 <li>Google OAuth</li>
@@ -21,11 +25,16 @@
 <li>Heroku</li>
 </ul>
 
-<h1><ul><strong>Next Steps:</strong></h1>
+<ul><h1>Next Steps:</h1>
 <br>
 <li>Implement Kayne.rest API for insights from Yeez that no one asked for</li>
 <li>Allow users to be able to share Jennerator suggestions across social media platforms</li>
 <li>Store multiple suggestions in the database to eliminate the need for hard-coded suggestions</li>
-<ul>
+</ul>
+<br>
+<h3>Thank you for checking out The Career Jennerator!</h3> 
+<br>
+<h3>Please don't sue me, Kris!</h3>
 
-<a href="https://trello.com/b/DiE1cRQD/project-2-crud-application-career-jennerator">View The Career Jennerator Trello Board Here</a>
+
+
