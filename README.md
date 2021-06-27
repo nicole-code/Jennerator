@@ -7,21 +7,25 @@
 <br>
 <a href="https://career-jennerator.herokuapp.com/">Click here to check out the Career Jennerator</a>
 <br>
-<ul><strong>Technologies used:</strong>
+<h1><ul><strong>Technologies used:</strong></h1>
 <br>
 <li>HTML</li>
 <li>CSS</li>
+<li>JavaScript<li>
 <li>Node JS</li>
 <li>Express JS</li>
+<li>Google OAuth</li>
 <li>Mongoose</li>
 <li>MongoDB</li>
 <li>MongoDB Atlas</li>
 <li>Heroku</li>
 </ul>
 
-<ul><strong>Next Steps:</strong>
+<h1><ul><strong>Next Steps:</strong></h1>
 <br>
 <li>Implement Kayne.rest API for insights from Yeez that no one asked for</li>
 <li>Allow users to be able to share Jennerator suggestions across social media platforms</li>
 <li>Store multiple suggestions in the database to eliminate the need for hard-coded suggestions</li>
 <ul>
+
+<a href="https://trello.com/b/DiE1cRQD/project-2-crud-application-career-jennerator">View The Career Jennerator Trello Board Here</a>

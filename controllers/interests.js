@@ -5,7 +5,6 @@ function index(req, res, next) {
     res.render('index', {user: req.user})
 };
 
-//add user to every controller
 
 function newInterest (req,res) {
     res.render('new', {user: req.user})
@@ -61,7 +60,7 @@ function scrapSuggestion (req,res) {
 function deleteSuggestion (req,res) {
     let idx = 0; //goes through ALL suggestions
     let correctIndex = 0;
-    for (let suggestion of req.user.suggestions) {
+     for (let suggestion of req.user.suggestions) {
             //if the id of the suggestion OBJECT in the suggestions 
             //array matches the one that was clicked on to be deleted, then grab INDEX of 
             //the object called correct index
